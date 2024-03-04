@@ -1,8 +1,8 @@
-function getRandomName() {
-    const namelist = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+function rando() {
+    const names = ['Joanna', 'Sadie', 'Frankie', 'Olivia', 'Amelia', 'Sophie', 'Alex', 'Vikki', 'Jackie', 'Jeff'];
     return {
-        get name() {
-            return namelist[Math.floor(Math.random() * namelist.length)];
-        },
+      get name() {
+        return names[Math.floor(Math.random() * names.length)];
+      },
     }
 }
