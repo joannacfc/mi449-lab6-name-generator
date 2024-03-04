@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's in a name?</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="/utilities.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's in a name?</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="/utilities.js"></script>
 </head>
-<body x-data="getRandomName">
-
+<body x-data="rando">
     <div>
-        <button @click="name = name">Click me</button>
-        <h1 x-text="name"></h1>
+        <h1>Random Name Generator</h1>
+        <button @click="name = name">Generate a name</button>
+        <h2 x-text="name"></h2>
     </div>
-    
 </body>
 </html>
